@@ -1,0 +1,20 @@
+gctest1/
+├── app.py                 # 应用入口，负责初始化和注册蓝图
+├── config.py              # 配置文件
+├── models/                # 数据模型
+│   ├── __init__.py
+│   ├── user.py            # 用户相关模型
+│   ├── department.py      # 部门相关模型
+│   ├── role.py            # 角色相关模型
+│   └── production.py      # 生产相关模型
+├── blueprints/            # 蓝图目录
+│   ├── __init__.py
+│   ├── auth.py            # 认证相关蓝图
+│   ├── user.py            # 用户管理蓝图
+│   ├── department.py      # 部门管理蓝图
+│   ├── role.py            # 角色管理蓝图
+│   ├── production.py      # 生产管理蓝图
+│   ├── material.py        # 物料管理蓝图
+│   └── system.py          # 系统管理蓝图
+├── templates/             # 模板文件
+└── static/                # 静态文件
