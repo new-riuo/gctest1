@@ -1,0 +1,17 @@
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+
+# 初始化SQLAlchemy对象
+db = SQLAlchemy()
+
+# 导入所有模型
+from .user import User
+from .department import Department
+from .role import Role, Permission
+from .production import ProductionPlan, ProcessingRecord, ProcessingMaterial, ProcessedProduct
+from .material import RawMaterial, RawMaterialInventory, MaterialTransaction
+from .product import Product
+from .system import SystemConfig
+from .equipment import Equipment
+from .quality import QualityRecord
+from .financial import FinancialRecord
