@@ -6,12 +6,15 @@ from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 import base64
 
-# API配置
-APP_KEY = "应用key"
-SERVICE_ID = "授权服务ID"
-APP_SECRET = "应用密钥"
-API_URL = "http://openapi-web.eccang.com/openApi/api/unity"
-INTERFACE_METHOD = "getStockOrderList"
+# API配置参数
+APP_KEY = 'd6b8b86b02ca45ed'
+SERVICE_ID = 'ECG61B'
+APP_SECRET = 'b71e1d924f8c399a'
+API_URL = 'http://openapi-web.eccang.com/openApi/api/unity'
+
+# 可选配置参数（根据需要启用）
+TOKEN = ''  # 应用的用户授权token
+SUBJECT_CODE = ''  # 公司唯一编码
 
 # 生成随机字符串
 def generate_nonce_str(length=32):
